@@ -122,14 +122,14 @@ var EP="https://formsubmit.co/ajax/779c0320e2f1a1cd9bf0a676d6890778",SHIP=80,IMG
 var P=[
 {id:"tommy",name:"حذاء تومي Ver2",tag:"جديد",price:260,sizes:[41,42,43,44,45],
  desc:"راحة وخفة وعملية في حذاء واحد. تريكو بتهوية كويسة ونعل مرن للمشاوير والاستخدام اليومي.",
- colors:[["أبيض","t_white"],["أسود","t_black"],["رمادي","t_grey"]],gallery:["t_white","t_black","t_grey","t_collage"]},
+ colors:[["أبيض","t_white"],["أسود","t_black"],["رمادي","t_grey"]],gallery:["t_white","t_black","t_grey"]},
 {id:"k15",name:"كوتشي PUMA إيڤا K15",tag:"جديد",price:580,sizes:[41,42,43,44,45,46],
  desc:"راحة وأناقة في كل خطوة. خامة تريكو درجة أولى ناعمة ومريحة، تصميم بفتحات تهوية، نعل EVA مرن وخفيف، فرش داخلي مبطن، خامات مستوردة وتقفيل مصري عالي الجودة. مناسب للخروجات والشغل والمشي اليومي.",
  colors:[["أبيض ملكي","k_white"],["أسود فخم","k_black"],["جينز مميز","k_jeans"]],gallery:["k_trio","k_white","k_black","k_jeans","k_white2","k_black2","k_jeans2"]}
 ];
 var $=function(i){return document.getElementById(i)};
 function priceTxt(p){return p?p+" جنيه":"السعر عند التأكيد"}
-$("h1").src=IMG.t_collage;$("h2").src=IMG.k_trio;
+$("h1").src=IMG.t_white;$("h2").src=IMG.k_trio;
 var list=$("plist");
 P.forEach(function(p){
  var d=document.createElement("article");d.className="prod";d.id="p-"+p.id;
