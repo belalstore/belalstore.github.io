@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belal Store</title>
+<meta name="description" content="اختيارات متنوعة من الأحذية والملابس والألعاب ومستلزمات البيت، مع توصيل لحد باب البيت ومعاينة عند الاستلام.">
+<meta property="og:title" content="Belal Store">
+<meta property="og:description" content="اختيارات متنوعة من الأحذية والملابس والألعاب ومستلزمات البيت، مع توصيل لحد باب البيت ومعاينة عند الاستلام.">
+<meta property="og:type" content="website">
+<meta name="twitter:title" content="Belal Store">
+<meta name="twitter:description" content="اختيارات متنوعة من الأحذية والملابس والألعاب ومستلزمات البيت، مع توصيل لحد باب البيت ومعاينة عند الاستلام.">
+<style>
+:root{--navy:#0b1738;--gold:#ffc928;--red:#e4202f;--ink:#0b1738}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,"Segoe UI",Tahoma,Arial,sans-serif;color:#fff;line-height:1.7;padding-bottom:20px;
+background:radial-gradient(900px 500px at 85% -5%,#2a4bb5 0,transparent 60%),radial-gradient(700px 500px at 0% 35%,#7a1630 0,transparent 55%),linear-gradient(180deg,#0b1738 0,#101f4d 45%,#0b1738 100%);background-attachment:fixed}
+.prod>*,.hero>*{min-width:0}html,body{overflow-x:hidden}.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:800;letter-spacing:.06em;font-size:20px}.logo b{color:var(--gold)}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:4px 12px;border-radius:99px;font-size:13px}
+.hero{display:grid;gap:22px;align-items:center;padding:14px 0 28px}@media(min-width:800px){.hero{grid-template-columns:1.1fr 1fr}}.hero .hi{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero .hi img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;border:3px solid rgba(255,255,255,.85);box-shadow:0 20px 50px rgba(0,0,0,.5)}.hero .hi img:nth-child(2){margin-top:26px}.kick{display:inline-block;color:var(--gold);font-weight:700;letter-spacing:.08em;font-size:13px;border:1px solid rgba(255,201,40,.5);padding:3px 14px;border-radius:99px;margin-bottom:10px}
+.hero h1{font-size:clamp(32px,7vw,54px);line-height:1.2}.hero h1 span{color:var(--gold)}.hero-title{text-shadow:0 0 10px rgba(255,201,40,.42),0 0 22px rgba(255,201,40,.2)}.hero-en{font-size:16px;letter-spacing:.08em;color:var(--gold);margin-top:4px;text-shadow:0 0 8px rgba(255,201,40,.5),0 0 18px rgba(255,201,40,.24)}
+.hero p{color:#cdd6f4;font-size:17px;margin-top:8px}
+.cta{display:inline-block;margin-top:16px;background:linear-gradient(135deg,#ffd84d,#ffb300);color:#1a1200;font-weight:800;text-decoration:none;padding:14px 28px;border-radius:14px;font-size:17px;box-shadow:0 10px 30px rgba(255,179,0,.35)}
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:8px 0}
+@media(min-width:700px){.badges{grid-template-columns:repeat(4,1fr)}}
+.badge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:14px 10px;text-align:center}
+.badge i{font-style:normal;font-size:28px;display:block}.badge b{display:block;font-size:15px}.badge span{font-size:12px;color:#b9c4ee}
+h2{font-size:28px;margin:40px 0 6px}
+h2:after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--red));margin-top:8px}
+.sub{color:#b9c4ee;margin-bottom:16px}
+.prod{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:26px;padding:16px;margin:0 0 24px;display:grid;gap:18px}
+@media(min-width:800px){.prod{grid-template-columns:1fr 1fr;padding:22px}}
+.gal .main{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;border:3px solid rgba(255,255,255,.85);box-shadow:0 18px 44px rgba(0,0,0,.5);display:block;background:#222}
+.thumbs{display:flex;gap:8px;margin-top:10px;overflow-x:auto}
+.thumbs img{width:64px;height:64px;object-fit:cover;border-radius:12px;border:2px solid transparent;opacity:.75;cursor:pointer;flex:none}
+.thumbs img.on{border-color:var(--gold);opacity:1}
+.tag{display:inline-block;background:var(--red);font-weight:700;font-size:13px;padding:3px 14px;border-radius:99px}
+.prod h3{font-size:28px;line-height:1.3;margin:8px 0}
+.desc{color:#d5dcf7;font-size:15px}
+.pr{display:flex;align-items:baseline;gap:8px;margin:12px 0 2px}.pr strong{font-size:44px;color:var(--gold);line-height:1}.pr small{font-size:17px}
+.note{color:#aab6e6;font-size:13px}
+.opts{margin-top:10px;font-size:14px;color:#e5eaff}.opts b{color:var(--gold)}
+.sw{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}.sw span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:2px 12px;font-size:13px}
+.feat{display:grid;gap:12px}@media(min-width:700px){.feat{grid-template-columns:repeat(2,1fr)}}
+.f{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px 16px}
+.f i{font-style:normal;background:linear-gradient(135deg,var(--gold),#ff9f1a);color:#1a1200;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;flex:none}
+.form{margin:36px 0 12px;background:#fff;color:var(--ink);border-radius:24px;padding:22px;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.form h3{font-size:24px;margin-bottom:4px}.form .hint{color:#59627f;font-size:14px;margin-bottom:14px}
+.grid{display:grid;gap:12px}@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:4px}
+input,select{width:100%;font:inherit;padding:12px 14px;border:2px solid #d8def0;border-radius:12px;background:#f7f9ff;color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:#ffb300;background:#fff}
+.send{width:100%;margin-top:14px;border:0;cursor:pointer;background:linear-gradient(135deg,#e4202f,#a3122a);color:#fff;font:inherit;font-weight:800;font-size:18px;padding:15px;border-radius:14px;box-shadow:0 10px 24px rgba(228,32,47,.35)}
+.err{color:#c0152a;font-size:14px;margin-top:8px;min-height:20px}
+.ok{text-align:center;font-size:20px;padding:24px 8px;color:#0b6b3a}.tot{background:#fff7dd;border-radius:12px;padding:10px 14px;font-weight:700}
+footer{text-align:center;color:#8f9bc9;font-size:13px;padding:28px 0 10px}
+.bar{position:sticky;bottom:0;z-index:10;background:rgba(11,23,56,.92);border-top:1px solid rgba(255,255,255,.18);padding:10px 16px;margin-top:20px}
+.bar .in{max-width:960px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.bar span{color:#cdd6f4;font-size:14px}
+.bar a{background:linear-gradient(135deg,#ffd84d,#ffb300);color:#1a1200;font-weight:800;text-decoration:none;padding:12px 22px;border-radius:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><div class="logo">BELAL <b>STORE</b></div></div>
+<section class="hero">
+<div><span class="kick">مجموعة جديدة</span>
+<h1 class="hero-title">ستايل <span>وجودة</span></h1><p class="hero-en">Style Delivered</p>
+<p>اختيارات متنوعة من الأحذية والملابس والألعاب ومستلزمات البيت. اختار اللي يناسبك واطلب بسهولة، ونوصلك لحد باب البيت مع معاينة عند الاستلام.</p>
+<a class="cta" href="#products">شوف المنتجات</a></div>
+<div class="hi"><img id="h1" alt="مجموعة تومي Ver2"><img id="h2" alt="مجموعة إيڤا K15"></div>
+</section>
+<section class="badges">
+<div class="badge"><i>🚚</i><b>توصيل لحد باب البيت</b><span>لحد عندك</span></div>
+<div class="badge"><i>🔍</i><b>معاينة عند الاستلام</b><span>شوفه قبل ما تدفع</span></div>
+<div class="badge"><i>🧸</i><b>منتجات متنوعة</b><span>لكل احتياجاتك</span></div>
+<div class="badge"><i>🏠</i><b>للبيت ولكل يوم</b><span>تسوق بسهولة</span></div>
+</section>
+
+<h2 id="products">المنتجات</h2>
+<p class="sub">اضغط على الصور لتغيير اللون، وبعدها اطلب من الفورم تحت</p>
+<div id="plist"></div>
+
+<h2>ليه Belal Store</h2>
+<section class="feat">
+<div class="f"><i>✓</i>توصيل لحد باب البيت</div>
+<div class="f"><i>✓</i>معاينة عند الاستلام</div>
+<div class="f"><i>✓</i>اختيارات متنوعة تناسب احتياجاتك</div>
+<div class="f"><i>✓</i>اطلب من الفورم وهنأكد معاك</div>
+</section>
+
+<section class="form" id="order">
+<h3>اطلب دلوقتي</h3>
+<p class="hint">اختار المنتج واملا البيانات وهنتواصل معاك لتأكيد الطلب. المعاينة عند الاستلام.</p>
+<form id="f" novalidate>
+<div class="grid">
+<div class="full"><label for="pr">المنتج</label><select id="pr"></select></div>
+<div><label for="n">الاسم</label><input id="n" autocomplete="name"></div>
+<div><label for="p">رقم الموبايل</label><input id="p" type="tel" inputmode="tel" autocomplete="tel"></div>
+<div><label for="p2">رقم موبايل احتياطي</label><input id="p2" type="tel" inputmode="tel"></div>
+<div><label for="g">المحافظة</label><input id="g"></div>
+<div class="full"><label for="a">العنوان بالتفصيل</label><input id="a" autocomplete="street-address"></div>
+<div><label for="c">اللون</label><select id="c"></select></div>
+<div><label for="s">المقاس</label><select id="s"></select></div>
+<div><label for="q">الكمية</label><select id="q"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+<div class="full"><div class="tot" id="tot"></div></div>
+</div>
+<p class="err" id="err" role="alert"></p>
+<button class="send" type="submit">ابعت الطلب</button>
+</form>
+</section>
+<footer>Belal Store</footer>
+</div>
+<div class="bar"><div class="in"><span>الشحن 80 جنيه | معاينة عند الاستلام</span><a href="#order">اطلب الآن</a></div></div>
+<script src="img1.js"></script><script src="img2.js"></script><script src="img3.js"></script>
+<script>
+(function(){
+var EP="https://formsubmit.co/ajax/779c0320e2f1a1cd9bf0a676d6890778",SHIP=80,IMG=window.IMG;
+var P=[
+{id:"tommy",name:"حذاء تومي Ver2",tag:"جديد",price:260,sizes:[41,42,43,44,45],
+ desc:"راحة وخفة وعملية في حذاء واحد. تريكو بتهوية كويسة ونعل مرن للمشاوير والاستخدام اليومي.",
+ colors:[["أبيض","t_white"],["أسود","t_black"],["رمادي","t_grey"]],gallery:["t_white","t_black","t_grey","t_collage"]},
+{id:"k15",name:"كوتشي PUMA إيڤا K15",tag:"جديد",price:580,sizes:[41,42,43,44,45,46],
+ desc:"راحة وأناقة في كل خطوة. خامة تريكو درجة أولى ناعمة ومريحة، تصميم بفتحات تهوية، نعل EVA مرن وخفيف، فرش داخلي مبطن، خامات مستوردة وتقفيل مصري عالي الجودة. مناسب للخروجات والشغل والمشي اليومي.",
+ colors:[["أبيض ملكي","k_white"],["أسود فخم","k_black"],["جينز مميز","k_jeans"]],gallery:["k_trio","k_white","k_black","k_jeans","k_white2","k_black2","k_jeans2"]}
+];
+var $=function(i){return document.getElementById(i)};
+function priceTxt(p){return p?p+" جنيه":"السعر عند التأكيد"}
+$("h1").src=IMG.t_collage;$("h2").src=IMG.k_trio;
+var list=$("plist");
+P.forEach(function(p){
+ var d=document.createElement("article");d.className="prod";d.id="p-"+p.id;
+ var h='<div class="gal"><img class="main" alt="'+p.name+'"><div class="thumbs">'+p.gallery.map(function(k){return '<img data-k="'+k+'" alt="">'}).join("")+'</div></div>';
+ h+='<div><span class="tag">'+p.tag+'</span><h3>'+p.name+'</h3><p class="desc">'+p.desc+'</p>';
+ h+=p.price?'<div class="pr"><strong>'+p.price+'</strong><small>جنيه</small></div><p class="note">+ شحن 80 جنيه (الإجمالي '+(p.price+SHIP)+' جنيه)</p>':'<div class="pr"><strong style="font-size:28px">السعر عند التأكيد</strong></div><p class="note">+ شحن 80 جنيه</p>';
+ h+='<p class="opts"><b>الألوان:</b></p><div class="sw">'+p.colors.map(function(c){return '<span>'+c[0]+'</span>'}).join("")+'</div>';
+ h+='<p class="opts"><b>المقاسات:</b> من '+p.sizes[0]+' إلى '+p.sizes[p.sizes.length-1]+'</p>';
+ h+='<a class="cta" href="#order" data-p="'+p.id+'">اطلب '+p.name+'</a></div>';
+ d.innerHTML=h;list.appendChild(d);
+ var main=d.querySelector(".main"),ths=d.querySelectorAll(".thumbs img");
+ function show(k){main.src=IMG[k];ths.forEach(function(t){t.classList.toggle("on",t.dataset.k===k)})}
+ ths.forEach(function(t){t.src=IMG[t.dataset.k];t.onclick=function(){show(t.dataset.k)}});
+ show(p.gallery[0]);
+ d.querySelector(".cta").onclick=function(){$("pr").value=p.id;fill()};
+});
+P.forEach(function(p){var o=document.createElement("option");o.value=p.id;o.textContent=p.name+(p.price?" - "+p.price+" ج":"");$("pr").appendChild(o)});
+function cur(){return P.filter(function(p){return p.id===$("pr").value})[0]}
+function fill(){var p=cur();
+ $("c").innerHTML=p.colors.map(function(c){return "<option>"+c[0]+"</option>"}).join("");
+ $("s").innerHTML=p.sizes.map(function(s){return "<option>"+s+"</option>"}).join("");tot()}
+function tot(){var p=cur(),q=Number($("q").value);
+ $("tot").textContent=p.price?"الإجمالي: "+(p.price*q+SHIP)+" جنيه (شامل الشحن "+SHIP+" ج)":"السعر هيتأكد معاك + شحن "+SHIP+" جنيه"}
+$("pr").onchange=fill;$("q").onchange=tot;fill();
+$("f").onsubmit=function(e){e.preventDefault();
+var ph=/^[0-9+ -]{10,15}$/;
+var miss=["n","p","g","a"].filter(function(i){return !$(i).value.trim()});
+if(miss.length){$("err").textContent="كمّل الاسم والموبايل والمحافظة والعنوان.";return}
+if(!ph.test($("p").value.trim())||($("p2").value.trim()&&!ph.test($("p2").value.trim()))){$("err").textContent="رقم الموبايل غير صحيح.";return}
+$("err").textContent="";
+var btn=$("f").querySelector(".send");btn.disabled=true;btn.textContent="جاري الإرسال...";
+var p=cur(),q=Number($("q").value);
+var d={_subject:"طلب جديد: "+p.name,_template:"table",_captcha:"false",
+"المنتج":p.name,"الاسم":$("n").value.trim(),"الموبايل":$("p").value.trim(),"موبايل احتياطي":$("p2").value.trim()||"-","المحافظة":$("g").value.trim(),"العنوان":$("a").value.trim(),"اللون":$("c").value,"المقاس":$("s").value,"الكمية":q,"الشحن":SHIP+" ج"};
+if(p.price){d["السعر"]=p.price*q+" ج";d["الإجمالي"]=(p.price*q+SHIP)+" ج"}else{d["السعر"]="يتأكد مع العميل"}
+fetch(EP,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)})
+.then(function(r){return r.json()}).then(function(j){
+ if(j&&(j.success===true||j.success==="true")){$("f").innerHTML='<div class="ok"><b>تم استلام طلبك ✅</b><br>هنكلمك على رقمك لتأكيد الطلب.</div>'}
+ else{throw new Error("x")}})
+.catch(function(){btn.disabled=false;btn.textContent="ابعت الطلب";$("err").textContent="حصلت مشكلة في الإرسال، جرب تاني."});
+};
+})();
+</script>
+</body></html>
